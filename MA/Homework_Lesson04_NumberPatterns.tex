@@ -1,0 +1,320 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ Mathematics - Homework Exercise}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+% This resets the page counter to 0 for the first page after the header setup
+% \thispagestyle{fancy} % Apply fancy style to the first page too
+
+\begin{center}
+\textbf{\Large Homework Exercise: Number Patterns \& Sequences}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Name:} \underline{\hspace{4cm}} \quad \textbf{Date:} \underline{\hspace{3cm}} \quad \textbf{Class:} \underline{\hspace{2cm}} \\
+\textbf{Lesson Topic:} Arithmetic Sequences, Geometric Sequences, Special Patterns \\
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\section*{Instructions}
+Look for patterns carefully. Show your working for finding nth terms. Check your answers by substituting back.
+
+\section{Section A: Simple Number Patterns (12 Questions)}
+
+\subsection*{Find the next three terms in each sequence:}
+
+\begin{enumerate}
+    \item 3, 7, 11, 15, 19, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item 2, 6, 18, 54, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item 100, 94, 88, 82, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item 1, 4, 9, 16, 25, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item 5, 10, 20, 40, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item 1, 1, 2, 3, 5, 8, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+\end{enumerate}
+
+\subsection*{Describe the pattern rule:}
+
+\begin{enumerate}
+    \setcounter{enumi}{6}
+    \item 4, 8, 12, 16, 20... Rule: \underline{\hspace{6cm}}
+    \item 3, 9, 27, 81, 243... Rule: \underline{\hspace{6cm}}
+    \item 50, 45, 40, 35, 30... Rule: \underline{\hspace{6cm}}
+    \item 2, 4, 8, 16, 32... Rule: \underline{\hspace{6cm}}
+    \item 1, 3, 6, 10, 15... Rule: \underline{\hspace{6cm}}
+    \item 7, 14, 28, 56, 112... Rule: \underline{\hspace{6cm}}
+\end{enumerate}
+
+\section{Section B: Arithmetic Sequences (10 Questions)}
+\textit{Remember: Arithmetic sequences have a constant difference}
+
+\subsection*{Question 1: Find the missing terms}
+
+\begin{enumerate}
+    \item 8, \underline{\hspace{1cm}}, 18, 23, \underline{\hspace{1cm}}, 33
+    \item \underline{\hspace{1cm}}, 15, 19, \underline{\hspace{1cm}}, 27, 31
+    \item 45, 38, \underline{\hspace{1cm}}, 24, \underline{\hspace{1cm}}, 10
+    \item 2.5, \underline{\hspace{1cm}}, 7.5, 10, \underline{\hspace{1cm}}
+\end{enumerate}
+
+\subsection*{Question 2: Find the nth term formula}
+
+For an arithmetic sequence with first term $a$ and common difference $d$:
+nth term = $a + (n-1)d$
+
+\begin{enumerate}
+    \item 5, 9, 13, 17, 21... nth term = \underline{\hspace{4cm}}
+    \item 20, 17, 14, 11, 8... nth term = \underline{\hspace{4cm}}
+    \item 3, 8, 13, 18, 23... nth term = \underline{\hspace{4cm}}
+    \item 100, 95, 90, 85, 80... nth term = \underline{\hspace{4cm}}
+\end{enumerate}
+
+\subsection*{Question 3: Using nth term formulas}
+
+\begin{enumerate}
+    \item If nth term = 4n + 1, find:
+          \begin{itemize}
+              \item 5th term: \underline{\hspace{2cm}}
+              \item 10th term: \underline{\hspace{2cm}}
+              \item 20th term: \underline{\hspace{2cm}}
+          \end{itemize}
+    
+    \item If nth term = 50 - 3n, find:
+          \begin{itemize}
+              \item 8th term: \underline{\hspace{2cm}}
+              \item 15th term: \underline{\hspace{2cm}}
+              \item Which term equals 11? \underline{\hspace{2cm}}
+          \end{itemize}
+\end{enumerate}
+
+\section{Section C: Geometric Sequences (8 Questions)}
+\textit{Remember: Geometric sequences have a constant ratio}
+
+\subsection*{Question 1: Find the common ratio and next term}
+
+\begin{enumerate}
+    \item 3, 12, 48, 192... Common ratio = \underline{\hspace{1cm}}, Next term = \underline{\hspace{2cm}}
+    \item 80, 40, 20, 10... Common ratio = \underline{\hspace{1cm}}, Next term = \underline{\hspace{2cm}}
+    \item 2, 6, 18, 54... Common ratio = \underline{\hspace{1cm}}, Next term = \underline{\hspace{2cm}}
+    \item 100, 10, 1, 0.1... Common ratio = \underline{\hspace{1cm}}, Next term = \underline{\hspace{2cm}}
+\end{enumerate}
+
+\subsection*{Question 2: Find the nth term formula}
+
+For a geometric sequence with first term $a$ and common ratio $r$:
+nth term = $ar^{n-1}$
+
+\begin{enumerate}
+    \item 4, 8, 16, 32... nth term = \underline{\hspace{4cm}}
+    \item 5, 15, 45, 135... nth term = \underline{\hspace{4cm}}
+    \item 64, 32, 16, 8... nth term = \underline{\hspace{4cm}}
+    \item 3, 12, 48, 192... nth term = \underline{\hspace{4cm}}
+\end{enumerate}
+
+\section{Section D: Special Patterns (10 Questions)}
+
+\subsection*{Question 1: Square Number Patterns}
+
+\begin{enumerate}
+    \item Complete: 1², 2², 3², 4², 5² = \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item Find the pattern: 1, 4, 9, 16, 25...
+          \begin{itemize}
+              \item Differences: 3, 5, 7, 9...
+              \item Second differences: \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+          \end{itemize}
+\end{enumerate}
+
+\subsection*{Question 2: Triangular Number Patterns}
+
+\begin{enumerate}
+    \item Complete the triangular number sequence: 1, 3, 6, 10, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item Find the pattern in differences: 2, 3, 4, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+\end{enumerate}
+
+\subsection*{Question 3: Growing Patterns}
+
+Draw or describe the next shape in these growing patterns:
+
+\textbf{Pattern 1:} Dots arranged in squares
+\begin{itemize}
+    \item 1st term: 1 dot
+    \item 2nd term: 4 dots (2×2)
+    \item 3rd term: 9 dots (3×3)
+    \item 4th term: \underline{\hspace{3cm}} dots
+    \item Pattern rule: \underline{\hspace{6cm}}
+\end{itemize}
+
+\textbf{Pattern 2:} Triangular arrangements
+\begin{itemize}
+    \item 1st term: 3 dots
+    \item 2nd term: 6 dots
+    \item 3rd term: 10 dots
+    \item 4th term: \underline{\hspace{3cm}} dots
+    \item Pattern rule: \underline{\hspace{6cm}}
+\end{itemize}
+
+\subsection*{Question 4: Function Machines}
+
+Complete these function machines:
+
+\begin{enumerate}
+    \item Input → ×3 → +2 → Output
+          \begin{itemize}
+              \item 1 → \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → 5
+              \item 4 → \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → \underline{\hspace{1cm}}
+              \item \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → 17
+          \end{itemize}
+    
+    \item Input → ×2 → -5 → Output
+          \begin{itemize}
+              \item 3 → \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → \underline{\hspace{1cm}}
+              \item 8 → \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → \underline{\hspace{1cm}}
+              \item \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → \underline{\hspace{1cm}} → 9
+          \end{itemize}
+\end{enumerate}
+
+\section{Section E: Problem Solving Patterns (8 Questions)}
+
+\subsection*{Question 1}
+A cinema has seats arranged in rows. The first row has 20 seats, the second row has 22 seats, the third row has 24 seats, and so on.
+\begin{enumerate}
+    \item How many seats in the 10th row? \underline{\hspace{3cm}}
+    \item How many seats in the nth row? \underline{\hspace{3cm}}
+    \item Which row has 50 seats? \underline{\hspace{3cm}}
+\end{enumerate}
+
+\subsection*{Question 2}
+A savings pattern: Week 1: £2, Week 2: £4, Week 3: £8, Week 4: £16...
+\begin{enumerate}
+    \item How much in Week 6? \underline{\hspace{3cm}}
+    \item What's the pattern rule? \underline{\hspace{5cm}}
+    \item How much in Week n? \underline{\hspace{3cm}}
+\end{enumerate}
+
+\subsection*{Question 3}
+A tower of blocks: Level 1 has 1 block, Level 2 has 3 blocks, Level 3 has 6 blocks, Level 4 has 10 blocks...
+\begin{enumerate}
+    \item How many blocks in Level 5? \underline{\hspace{2cm}}
+    \item What pattern do you notice? \underline{\hspace{5cm}}
+    \item How many blocks in Level n? \underline{\hspace{4cm}}
+\end{enumerate}
+
+\subsection*{Question 4}
+Find the missing numbers in this pattern:
+5, 8, 14, 23, 35, \underline{\hspace{1cm}}, 62, \underline{\hspace{1cm}}
+
+Show your working:
+
+\vspace{2cm}
+
+\subsection*{Question 5}
+Create your own pattern sequence with at least 6 terms. Write the rule and ask a friend to find the next term:
+
+Your sequence: \underline{\hspace{8cm}}
+
+Rule: \underline{\hspace{10cm}}
+
+\section{Extension Activity: Advanced Patterns}
+
+\subsection*{Question 1: Quadratic Sequences}
+These sequences have constant second differences:
+
+2, 5, 10, 17, 26, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+
+\textbf{Working:}
+\begin{itemize}
+    \item First differences: 3, 5, 7, 9, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+    \item Second differences: 2, 2, 2, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}
+\end{itemize}
+
+\subsection*{Question 2: Mixed Patterns}
+Can you spot the pattern?
+
+1, 11, 21, 1211, 111221, \underline{\hspace{4cm}}
+
+Hint: Look and say what you see!
+
+\vspace{1cm}
+
+\section*{Self-Assessment}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Section} & \textbf{Confident} & \textbf{Need Practice} & \textbf{Need Help} \\
+\hline
+Simple Patterns & $\square$ & $\square$ & $\square$ \\
+\hline
+Arithmetic Sequences & $\square$ & $\square$ & $\square$ \\
+\hline
+Geometric Sequences & $\square$ & $\square$ & $\square$ \\
+\hline
+Special Patterns & $\square$ & $\square$ & $\square$ \\
+\hline
+Problem Solving & $\square$ & $\square$ & $\square$ \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\textbf{Parent/Guardian Signature:} \underline{\hspace{5cm}} \textbf{Date:} \underline{\hspace{3cm}}
+
+\section*{Teacher Use Only}
+\begin{tabular}{|l|c|l|}
+\hline
+\textbf{Section A} & \_\_\_/12 & Comments: \\
+\hline
+\textbf{Section B} & \_\_\_/10 & \\
+\hline
+\textbf{Section C} & \_\_\_/8 & \\
+\hline
+\textbf{Section D} & \_\_\_/10 & \\
+\hline
+\textbf{Section E} & \_\_\_/8 & \\
+\hline
+\textbf{Extension} & \_\_\_/4 & \\
+\hline
+\textbf{Total} & \_\_\_/52 & \\
+\hline
+\end{tabular}
+
+\end{document}

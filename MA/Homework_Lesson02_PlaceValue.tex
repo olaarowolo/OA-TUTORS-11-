@@ -1,0 +1,281 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ Mathematics - Homework Exercise}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+% This resets the page counter to 0 for the first page after the header setup
+% \thispagestyle{fancy} % Apply fancy style to the first page too
+
+\begin{center}
+\textbf{\Large Homework Exercise: Place Value Mastery}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Name:} \underline{\hspace{4cm}} \quad \textbf{Date:} \underline{\hspace{3cm}} \quad \textbf{Class:} \underline{\hspace{2cm}} \\
+\textbf{Lesson Topic:} Read, Write, Compare, and Order Numbers \\
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\section*{Instructions}
+Complete all sections carefully. Pay attention to place value positions. Remember to line up decimal points when comparing.
+
+\section{Section A: Converting Between Words and Figures (10 Questions)}
+
+\subsection*{Part 1: Write in figures}
+\begin{enumerate}
+    \item Two million, three hundred and forty-five thousand, six hundred and twelve
+    
+    Answer: \underline{\hspace{4cm}}
+    
+    \item One million, four hundred and seven thousand, three hundred and eighty
+    
+    Answer: \underline{\hspace{4cm}}
+    
+    \item Five million, sixty thousand and nine
+    
+    Answer: \underline{\hspace{4cm}}
+    
+    \item Three hundred and twenty-seven thousand, four hundred and fifty-six
+    
+    Answer: \underline{\hspace{4cm}}
+    
+    \item Nine million, eight hundred thousand and seventy-three
+    
+    Answer: \underline{\hspace{4cm}}
+\end{enumerate}
+
+\subsection*{Part 2: Write in words}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item 1,407,380
+    
+    \vspace{1cm}
+    
+    \item 3,045,672
+    
+    \vspace{1cm}
+    
+    \item 6,200,509
+    
+    \vspace{1cm}
+    
+    \item 847,036
+    
+    \vspace{1cm}
+    
+    \item 2,008,401
+    
+    \vspace{1cm}
+\end{enumerate}
+
+\section{Section B: Place Value Understanding (15 Questions)}
+
+\subsection*{Question 1}
+In the number 5,847,329, what is the value of:
+\begin{enumerate}
+    \item The digit 8: \underline{\hspace{3cm}}
+    \item The digit 4: \underline{\hspace{3cm}}
+    \item The digit 2: \underline{\hspace{3cm}}
+    \item The digit 5: \underline{\hspace{3cm}}
+\end{enumerate}
+
+\subsection*{Question 2}
+Write these decimals in the correct place value chart:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Hundreds} & \textbf{Tens} & \textbf{Units} & \textbf{.} & \textbf{Tenths} & \textbf{Hundredths} & \textbf{Thousandths} \\
+\hline
+ & & & . & & & \\
+\hline
+ & & & . & & & \\
+\hline
+ & & & . & & & \\
+\hline
+\end{tabular}
+\end{center}
+
+Numbers to place: 47.385, 156.07, 9.246
+
+\subsection*{Question 3}
+Fill in the missing numbers:
+\begin{enumerate}
+    \item 4,000 + 300 + \underline{\hspace{1cm}} + 6 = 4,376
+    \item \underline{\hspace{1cm}} + 80,000 + 400 + 7 = 287,407
+    \item 50,000 + \underline{\hspace{1cm}} + 90 + 3 = 53,093
+    \item 6,000,000 + \underline{\hspace{1cm}} + 800 = 6,045,800
+\end{enumerate}
+
+\section{Section C: Comparing and Ordering Numbers (10 Questions)}
+
+\subsection*{Question 1: Fill in $>$, $<$, or $=$}
+\begin{enumerate}
+    \item 67,234 \underline{\hspace{1cm}} 67,324
+    \item 145,680 \underline{\hspace{1cm}} 145,608  
+    \item 0.7 \underline{\hspace{1cm}} 0.67
+    \item 3.45 \underline{\hspace{1cm}} 3.450
+    \item 89,999 \underline{\hspace{1cm}} 90,001
+\end{enumerate}
+
+\subsection*{Question 2: Order from smallest to largest}
+\begin{enumerate}
+    \item 45,670 | 45,607 | 45,760 | 45,067
+    
+    \vspace{1cm}
+    
+    \item 0.45 | 0.405 | 0.54 | 0.5
+    
+    \vspace{1cm}
+    
+    \item 3.2 | 3.02 | 3.202 | 3.22
+    
+    \vspace{1cm}
+    
+    \item 156,780 | 156,087 | 156,708 | 156,807
+    
+    \vspace{1cm}
+    
+    \item 0.306 | 0.36 | 0.063 | 0.6
+    
+    \vspace{1cm}
+\end{enumerate}
+
+\section{Section D: Rounding Numbers (10 Questions)}
+
+\begin{enumerate}
+    \item Round 47,368 to the nearest thousand: \underline{\hspace{3cm}}
+    \item Round 3.247 to 1 decimal place: \underline{\hspace{3cm}}
+    \item Round 156,499 to the nearest hundred thousand: \underline{\hspace{3cm}}
+    \item Round 678.956 to the nearest whole number: \underline{\hspace{3cm}}
+    \item Round 34,567 to the nearest hundred: \underline{\hspace{3cm}}
+    \item Round 0.8739 to 2 decimal places: \underline{\hspace{3cm}}
+    \item Round 987,654 to the nearest ten thousand: \underline{\hspace{3cm}}
+    \item Round 45.67 to the nearest ten: \underline{\hspace{3cm}}
+    \item Round 2.3967 to 3 decimal places: \underline{\hspace{3cm}}
+    \item Round 567,832 to the nearest million: \underline{\hspace{3cm}}
+\end{enumerate}
+
+\section{Section E: Word Problems (5 Questions)}
+
+\subsection*{Question 1}
+In the number 5,\_4\_,273, what digits could go in the spaces to make the smallest possible number?
+
+\vspace{2cm}
+
+\subsection*{Question 2}
+A number rounded to the nearest thousand is 47,000. What is the smallest whole number it could be? What is the largest whole number it could be?
+
+\vspace{2cm}
+
+\subsection*{Question 3}
+The population of a town is 67,845. Round this to the nearest hundred and to the nearest thousand. What is the difference between these two rounded numbers?
+
+\vspace{2cm}
+
+\subsection*{Question 4}
+Arrange these numbers in descending order: $\frac{3}{4}$, 0.8, 0.73, $\frac{4}{5}$
+
+\vspace{2cm}
+
+\subsection*{Question 5}
+The digit 7 appears in a 6-digit number. Its value is 70,000. In which position is the digit 7?
+
+\vspace{2cm}
+
+\section{Extension Activity: Number Investigation}
+Create three different 6-digit numbers using the digits 2, 4, 6, 7, 8, 9 (use each digit exactly once in each number):
+
+\begin{enumerate}
+    \item The largest possible number: \underline{\hspace{4cm}}
+    \item The smallest possible number: \underline{\hspace{4cm}}
+    \item A number where the digit 4 has the value 400: \underline{\hspace{4cm}}
+\end{enumerate}
+
+Which of your three numbers, when rounded to the nearest thousand, gives 468,000?
+
+\vspace{1cm}
+
+\section*{Self-Assessment}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Section} & \textbf{Confident} & \textbf{Need Practice} & \textbf{Need Help} \\
+\hline
+Words and Figures & $\square$ & $\square$ & $\square$ \\
+\hline
+Place Value Understanding & $\square$ & $\square$ & $\square$ \\
+\hline
+Comparing and Ordering & $\square$ & $\square$ & $\square$ \\
+\hline
+Rounding Numbers & $\square$ & $\square$ & $\square$ \\
+\hline
+Word Problems & $\square$ & $\square$ & $\square$ \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\textbf{Parent/Guardian Signature:} \underline{\hspace{5cm}} \textbf{Date:} \underline{\hspace{3cm}}
+
+\section*{Teacher Use Only}
+\begin{tabular}{|l|c|l|}
+\hline
+\textbf{Section A} & \_\_\_/10 & Comments: \\
+\hline
+\textbf{Section B} & \_\_\_/15 & \\
+\hline
+\textbf{Section C} & \_\_\_/10 & \\
+\hline
+\textbf{Section D} & \_\_\_/10 & \\
+\hline
+\textbf{Section E} & \_\_\_/5 & \\
+\hline
+\textbf{Extension} & \_\_\_/4 & \\
+\hline
+\textbf{Total} & \_\_\_/54 & \\
+\hline
+\end{tabular}
+
+\end{document>

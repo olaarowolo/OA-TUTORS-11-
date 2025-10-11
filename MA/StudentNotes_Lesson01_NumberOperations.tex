@@ -1,0 +1,205 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ Mathematics - Student Notes}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+% This resets the page counter to 0 for the first page after the header setup
+% \thispagestyle{fancy} % Apply fancy style to the first page too
+
+\begin{center}
+\textbf{\Large 11+ Maths Student Notes: Number Operations}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{What You'll Learn Today}]
+\begin{itemize}
+    \item Master the four number operations: +, -, ×, ÷
+    \item Learn mental maths tricks for quick calculations
+    \item Practice written methods for larger numbers
+    \item Solve word problems step by step
+\end{itemize}
+\end{tcolorbox}
+
+\section{Addition \& Subtraction}
+
+\subsection{Mental Strategies}
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Quick Mental Tricks}]
+\textbf{Partitioning:} 47 + 28 = (40 + 20) + (7 + 8) = 60 + 15 = 75
+
+\textbf{Compensation:} 47 + 29 = 47 + 30 - 1 = 77 - 1 = 76
+
+\textbf{Near Doubles:} 47 + 46 = 46 + 46 + 1 = 92 + 1 = 93
+\end{tcolorbox}
+
+\subsection{Column Method}
+For larger numbers, line up the columns:
+\begin{center}
+\begin{tabular}{r}
+  3847 \\
++ 2695 \\
+\hline
+  6542
+\end{tabular}
+\quad\quad\quad
+\begin{tabular}{r}
+  5234 \\
+- 1678 \\
+\hline
+  3556
+\end{tabular}
+\end{center}
+
+\section{Multiplication}
+
+\subsection{Mental Tricks}
+\begin{tcolorbox}[colback=orange!5!white,colframe=orange!75!black,title=\textbf{Multiplication Shortcuts}]
+\textbf{Times by 10:} Move digits one place left (add a zero)
+\\73 × 10 = 730
+
+\textbf{Times by 5:} Times by 10, then halve
+\\36 × 5 = (36 × 10) ÷ 2 = 360 ÷ 2 = 180
+
+\textbf{Times by 9:} Times by 10, then subtract original
+\\47 × 9 = (47 × 10) - 47 = 470 - 47 = 423
+\end{tcolorbox}
+
+\subsection{Grid Method}
+Break down larger multiplications:
+
+\begin{center}
+34 × 27 = ?
+
+\begin{tabular}{|c|c|c|}
+\hline
+× & 30 & 4 \\
+\hline
+20 & 600 & 80 \\
+\hline
+7 & 210 & 28 \\
+\hline
+\end{tabular}
+
+Add up: 600 + 80 + 210 + 28 = 918
+\end{center}
+
+\section{Division}
+
+\subsection{Short Division}
+For dividing by single digits:
+\begin{center}
+156 ÷ 12 = 13
+\end{center}
+
+\subsection{Long Division}
+For dividing by two digits - essential for 11+!
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{Division Tips}]
+\begin{itemize}
+    \item Use times tables in reverse
+    \item Estimate first: 156 ÷ 12 ≈ 160 ÷ 10 = 16
+    \item Check answers by multiplying back
+\end{itemize}
+\end{tcolorbox}
+
+\section{Problem Solving Steps}
+
+\begin{tcolorbox}[colback=purple!5!white,colframe=purple!75!black,title=\textbf{Word Problem Strategy}]
+\textbf{1. READ} the problem twice
+\\
+\textbf{2. IDENTIFY} what you need to find
+\\
+\textbf{3. CHOOSE} the right operation
+\\
+\textbf{4. CALCULATE} step by step
+\\
+\textbf{5. CHECK} your answer makes sense
+\end{tcolorbox}
+
+\section{Key Facts to Remember}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Operation} & \textbf{Key Words} \\
+\hline
+Addition & add, plus, sum, total, altogether, increase \\
+\hline
+Subtraction & subtract, minus, difference, decrease, less \\
+\hline
+Multiplication & times, multiply, product, lots of \\
+\hline
+Division & divide, share, split, how many groups \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Quick Practice}
+
+\textbf{Try these in your head:}
+\begin{enumerate}
+    \item 47 + 38 = ?
+    \item 124 - 67 = ?
+    \item 25 × 8 = ?
+    \item 144 ÷ 12 = ?
+\end{enumerate}
+
+\textbf{Word Problem:}
+A school has 24 classes. Each class has 28 students. How many students are there altogether?
+
+\vspace{1cm}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=gray!50!black,title=\textbf{Homework Reminder}]
+\begin{itemize}
+    \item Practice the mental strategies daily
+    \item Complete the homework worksheet
+    \item Ask for help if you get stuck!
+\end{itemize}
+\end{tcolorbox}
+
+\end{document}

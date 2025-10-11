@@ -1,0 +1,207 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ Mathematics - Student Notes}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+% This resets the page counter to 0 for the first page after the header setup
+% \thispagestyle{fancy} % Apply fancy style to the first page too
+
+\begin{center}
+\textbf{\Large 11+ Maths Student Notes: Number Patterns \& Sequences}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{What You'll Learn Today}]
+\begin{itemize}
+    \item Spot patterns in number sequences
+    \item Continue arithmetic (linear) sequences
+    \item Recognize special sequences like Fibonacci
+    \item Find formulas for the nth term
+\end{itemize}
+\end{tcolorbox}
+
+\section{Arithmetic Sequences (Linear Patterns)}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{What's an Arithmetic Sequence?}]
+A sequence where you ADD (or subtract) the same number each time
+\end{tcolorbox}
+
+\subsection{Examples}
+\begin{itemize}
+    \item 5, 8, 11, 14, 17... (add 3 each time)
+    \item 20, 17, 14, 11, 8... (subtract 3 each time)  
+    \item 4, 9, 14, 19, 24... (add 5 each time)
+\end{itemize}
+
+\subsection{How to Spot the Pattern}
+\begin{enumerate}
+    \item Find the differences between consecutive terms
+    \item If the differences are constant → arithmetic sequence!
+    \item The constant difference is called the "common difference"
+\end{enumerate}
+
+\textbf{Example:} 7, 11, 15, 19, 23...
+\\Differences: +4, +4, +4, +4 ✓ (arithmetic sequence)
+
+\section{Finding the nth Term}
+
+\begin{tcolorbox}[colback=orange!5!white,colframe=orange!75!black,title=\textbf{The Formula}]
+\textbf{nth term = First term + (Position - 1) × Common difference}
+\end{tcolorbox}
+
+\textbf{Example:} 7, 11, 15, 19, 23...
+\begin{itemize}
+    \item First term = 7
+    \item Common difference = +4  
+    \item 10th term = 7 + (10-1) × 4 = 7 + 36 = 43
+\end{itemize}
+
+\section{Non-Linear Sequences}
+
+\subsection{Quadratic Sequences (Square Number Based)}
+\begin{itemize}
+    \item 1, 4, 9, 16, 25... (perfect squares: n²)
+    \item 2, 8, 18, 32, 50... (2n²)
+    \item 0, 3, 8, 15, 24... (n² - 1)
+\end{itemize}
+
+\subsection{Geometric Sequences (Multiplication/Division)}
+\begin{itemize}
+    \item 2, 6, 18, 54, 162... (×3 each time)
+    \item 5, 10, 20, 40, 80... (×2 each time)
+    \item 81, 27, 9, 3, 1... (÷3 each time)
+\end{itemize}
+
+\section{Special Sequences You Should Know}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{Famous Sequences}]
+\textbf{Fibonacci:} 1, 1, 2, 3, 5, 8, 13, 21... (add the previous two numbers)
+
+\textbf{Triangular:} 1, 3, 6, 10, 15, 21... (T$_n$ = $\frac{n(n+1)}{2}$)
+
+\textbf{Square:} 1, 4, 9, 16, 25, 36... (n²)
+
+\textbf{Cube:} 1, 8, 27, 64, 125... (n³)
+
+\textbf{Prime:} 2, 3, 5, 7, 11, 13, 17...
+\end{tcolorbox}
+
+\section{Pattern Detective Strategy}
+
+\begin{tcolorbox}[colback=purple!5!white,colframe=purple!75!black,title=\textbf{How to Solve Any Sequence}]
+\textbf{Step 1:} Find first differences (subtract consecutive terms)
+
+\textbf{Step 2:} If constant → arithmetic sequence ✓
+
+\textbf{Step 3:} If not constant, find second differences  
+
+\textbf{Step 4:} If second differences constant → quadratic ✓
+
+\textbf{Step 5:} Look for ×/÷ patterns
+
+\textbf{Step 6:} Check for special sequences (squares, Fibonacci, etc.)
+\end{tcolorbox}
+
+\section{Worked Example}
+
+\textbf{Find the pattern:} 3, 7, 13, 21, 31...
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Terms: & 3 & 7 & 13 & 21 & 31 \\
+\hline
+1st differences: & & 4 & 6 & 8 & 10 \\
+\hline
+2nd differences: & & & 2 & 2 & 2 \\
+\hline
+\end{tabular}
+\end{center}
+
+Second differences are constant (2) → This is a quadratic sequence!
+\\The formula is: n² + n + 1
+
+\section{Quick Practice}
+
+\textbf{Continue these sequences:}
+\begin{enumerate}
+    \item 4, 7, 10, 13, \_\_\_, \_\_\_
+    \item 2, 6, 18, 54, \_\_\_, \_\_\_
+    \item 1, 4, 9, 16, \_\_\_, \_\_\_
+    \item 1, 1, 2, 3, 5, \_\_\_, \_\_\_
+\end{enumerate}
+
+\textbf{Find the rules:}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item What's the 20th term of: 3, 8, 13, 18, 23...?
+    \item What type of sequence is: 5, 10, 20, 40, 80...?
+\end{enumerate}
+
+\section{Memory Tricks}
+
+\begin{itemize}
+    \item \textbf{Arithmetic:} Think "add the same amount" 
+    \item \textbf{Geometric:} Think "multiply by the same amount"
+    \item \textbf{Quadratic:} Look for second differences = constant
+    \item \textbf{Fibonacci:} Each term = sum of previous two
+\end{itemize}
+
+\vspace{1cm}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=gray!50!black,title=\textbf{Top Tips for 11+ Success}]
+\begin{itemize}
+    \item Always check differences systematically
+    \item Learn the first 10 terms of common sequences
+    \item Practice finding nth terms quickly
+    \item Look for patterns in real life (spiral shells, flower petals!)
+\end{itemize}
+\end{tcolorbox}
+
+\end{document}

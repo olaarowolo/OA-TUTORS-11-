@@ -1,0 +1,296 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt}
+\addtolength{\topmargin}{-21pt}
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}}
+\fancyhead[C]{\textbf{11+ Mathematics}}
+\fancyhead[R]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+\begin{center}
+\textbf{\Large 11+ Maths: Number Patterns \& Sequences}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Topic:} Linear and Non-linear Sequences \\
+\textbf{Target Age:} 10-11 years (Preparing for 11+ Exams) \\
+\textbf{Time:} 60 Minutes \\
+\textbf{Resources:} Number sequences, pattern blocks, sequence cards \\
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+This lesson develops pattern recognition skills essential for 11+ success. Students will explore arithmetic sequences, geometric patterns, and special number sequences commonly tested in entrance exams.
+
+\section{Learning Objectives}
+By the end of this lesson, students will be able to:
+\begin{itemize}
+    \item Identify and continue arithmetic sequences (linear patterns)
+    \item Recognize geometric sequences and other non-linear patterns
+    \item Find the nth term of simple arithmetic sequences
+    \item Work with Fibonacci sequences and other special patterns
+    \item Apply pattern recognition to solve 11+ problems
+    \item Generate their own number sequences with rules
+\end{itemize}
+
+\section{Starter Activity (10 Minutes)}
+
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{1cm}|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Time} & \textbf{Activity} & \textbf{Description} \\
+\hline
+5 mins & Pattern Detective & Show sequences: 3, 6, 9, 12, \_\_; 2, 4, 8, 16, \_\_; 1, 1, 2, 3, 5, \_\_. Students identify patterns and next terms. \\
+\hline
+5 mins & Human Sequence & Students form arithmetic sequence: start with 7, add 4 each time. Class predicts who comes next. \\
+\hline
+\end{tabularx}
+
+\section{Main Teaching (25 Minutes)}
+
+\subsection{Linear Sequences (Arithmetic Sequences) (10 minutes)}
+
+\textbf{Definition:} Sequences where the same number is added (or subtracted) each time.
+
+\textbf{Key Examples:}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Sequence} & \textbf{First Term} & \textbf{Common Difference} & \textbf{Rule} \\
+\hline
+5, 8, 11, 14, 17... & 5 & +3 & Start 5, add 3 \\
+\hline
+20, 17, 14, 11, 8... & 20 & -3 & Start 20, subtract 3 \\
+\hline
+4, 9, 14, 19, 24... & 4 & +5 & Start 4, add 5 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Finding the Pattern:}
+1. Look at differences between consecutive terms
+2. If differences are constant = arithmetic sequence
+3. Formula: Term = First term + (Position - 1) × Common difference
+
+\textbf{Example:} 7, 11, 15, 19, 23...
+\begin{itemize}
+    \item Differences: +4, +4, +4, +4 (constant)
+    \item 10th term = 7 + (10-1) × 4 = 7 + 36 = 43
+\end{itemize}
+
+\subsection{Non-Linear Sequences (8 minutes)}
+
+\textbf{Quadratic Sequences:} Based on square numbers
+\begin{itemize}
+    \item 1, 4, 9, 16, 25... (perfect squares: n²)
+    \item 2, 8, 18, 32, 50... (2n²)
+    \item 0, 3, 8, 15, 24... (n² - 1)
+\end{itemize}
+
+\textbf{Geometric Sequences:} Each term is multiplied by same number
+\begin{itemize}
+    \item 2, 6, 18, 54, 162... (×3 each time)
+    \item 5, 10, 20, 40, 80... (×2 each time)  
+    \item 81, 27, 9, 3, 1... (÷3 each time)
+\end{itemize}
+
+\textbf{Special Sequences:}
+\begin{itemize}
+    \item \textbf{Fibonacci:} 1, 1, 2, 3, 5, 8, 13... (add previous two terms)
+    \item \textbf{Triangular:} 1, 3, 6, 10, 15, 21... (T$_n$ = $\frac{n(n+1)}{2}$)
+    \item \textbf{Prime numbers:} 2, 3, 5, 7, 11, 13, 17...
+\end{itemize}
+
+\subsection{Pattern Recognition Strategies (7 minutes)}
+
+\textbf{11+ Method for Any Sequence:}
+\begin{enumerate}
+    \item Find first differences (subtract consecutive terms)
+    \item If constant → arithmetic sequence  
+    \item If not constant, find second differences
+    \item If second differences constant → quadratic sequence
+    \item Look for multiplication/division patterns
+    \item Check for special sequences (squares, cubes, primes)
+\end{enumerate}
+
+\textbf{Example Analysis:} 3, 7, 13, 21, 31...
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Terms: & 3 & 7 & 13 & 21 & 31 \\
+\hline
+1st differences: & & 4 & 6 & 8 & 10 \\
+\hline  
+2nd differences: & & & 2 & 2 & 2 \\
+\hline
+\end{tabular}
+\end{center}
+Second differences are constant (2), so this is quadratic: n² + n + 1
+
+\section{Guided Practice (15 Minutes)}
+
+\subsection*{Worksheet: Sequence Mastery}
+
+\textbf{Section A: Continue the Sequences (5 minutes)}
+\begin{enumerate}
+    \item 4, 7, 10, 13, 16, \_\_\_, \_\_\_
+    \item 2, 6, 18, 54, \_\_\_, \_\_\_  
+    \item 1, 4, 9, 16, 25, \_\_\_, \_\_\_
+    \item 50, 47, 44, 41, \_\_\_, \_\_\_
+    \item 1, 1, 2, 3, 5, 8, \_\_\_, \_\_\_
+\end{enumerate}
+
+\textbf{Section B: Find the Rule (5 minutes)}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item What's the rule for: 5, 9, 13, 17, 21...?
+    \item What's the 20th term in the sequence: 3, 8, 13, 18, 23...?
+    \item Which sequence has the rule "multiply previous term by 2"?
+    \item Describe the pattern: 2, 5, 10, 17, 26...
+\end{enumerate}
+
+\textbf{Section C: Create Sequences (5 minutes)}
+\begin{enumerate}
+    \setcounter{enumi}{9}
+    \item Write an arithmetic sequence starting with 12, common difference -5
+    \item Create a sequence where each term is double the position number plus 1
+    \item Write the first 6 terms of the sequence n² + 3
+\end{enumerate}
+
+\section{Independent Work (8 Minutes)}
+
+\textbf{11+ Challenge Problems:}
+\begin{enumerate}
+    \item The sequence 5, 8, 13, 20, 29... follows the rule n² + 4. What is the 10th term?
+    \item A sequence starts 3, 6, 12, 24... If this pattern continues, what is the 8th term?
+    \item Find the missing term: 2, 7, 14, 23, \_\_\_, 47
+    \item The nth term of a sequence is 4n - 1. Which term has value 39?
+    \item In the Fibonacci sequence, what is the sum of the 5th and 6th terms?
+\end{enumerate}
+
+\section{Plenary and Assessment (2 Minutes)}
+
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{1cm}|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Time} & \textbf{Activity} & \textbf{Description} \\
+\hline
+2 mins & Sequence Showcase & Students share one sequence they created. Class identifies the pattern type. Quick assessment of understanding. \\
+\hline
+\end{tabularx}
+
+\section{Homework Assignment}
+
+\textbf{Pattern Explorer Tasks:}
+\begin{enumerate}
+    \item Complete 15 sequence continuation problems
+    \item Find nth terms for 5 arithmetic sequences  
+    \item Investigate Pascal's triangle patterns
+    \item Create a poster showing 3 different sequence types
+    \item Extension: Research the golden ratio and Fibonacci connection
+\end{enumerate}
+
+\section{Extension Activities}
+
+For more able students:
+\begin{itemize}
+    \item Explore sequences in nature (sunflower spirals, shell patterns)
+    \item Investigate convergent and divergent sequences
+    \item Create sequences using algebraic expressions
+    \item Study the Tower of Hanoi problem and its sequence
+\end{itemize}
+
+\newpage
+
+\section*{Answer Key - For Teachers}
+
+\subsection*{Guided Practice Answers}
+
+\textbf{Section A: Continue the Sequences}
+\begin{enumerate}
+    \item 19, 22 (arithmetic: +3)
+    \item 162, 486 (geometric: ×3)
+    \item 36, 49 (square numbers: 6², 7²)
+    \item 38, 35 (arithmetic: -3)
+    \item 13, 21 (Fibonacci: add previous two)
+\end{enumerate}
+
+\textbf{Section B: Find the Rule}  
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item Start with 5, add 4 each time (or 4n + 1)
+    \item 20th term = 3 + (20-1) × 5 = 98
+    \item 1, 2, 4, 8, 16, 32... (powers of 2)
+    \item n² + 1 (differences of 3, 5, 7, 9... which differ by 2)
+\end{enumerate}
+
+\textbf{Section C: Create Sequences}
+\begin{enumerate}
+    \setcounter{enumi}{9}
+    \item 12, 7, 2, -3, -8, -13...
+    \item 3, 5, 7, 9, 11, 13... (2n + 1)
+    \item 4, 7, 12, 19, 28, 39... (n² + 3)
+\end{enumerate}
+
+\subsection*{Independent Work Answers}
+\begin{enumerate}
+    \item 10² + 4 = 104
+    \item 3 × 2⁷ = 3 × 128 = 384  
+    \item 34 (pattern is n² + n: 2², 2²+2, 3²+3, 4²+4, 5²+5, 6²+6)
+    \item 4n - 1 = 39, so 4n = 40, n = 10 (10th term)
+    \item 5th term = 5, 6th term = 8, sum = 13
+\end{enumerate}
+
+\subsection*{Teaching Notes}
+\begin{itemize}
+    \item Use visual patterns (dot arrangements) for kinesthetic learners
+    \item Common error: Students confuse position number with term value
+    \item Emphasize systematic approach: always check differences first
+    \item Link to real-world patterns: population growth, compound interest
+    \item Practice speed of recognition - 11+ timing is crucial
+    \item Use colored counters or blocks to build physical sequences
+\end{itemize}
+
+\subsection*{Differentiation Strategies}
+\begin{itemize}
+    \item \textbf{Support:} Provide difference tables ready-made
+    \item \textbf{Challenge:} Introduce cubic sequences and recursive formulas  
+    \item \textbf{Visual:} Use graph paper to plot sequence values
+    \item \textbf{Practical:} Create sequences with manipulatives
+\end{itemize}
+
+\end{document}

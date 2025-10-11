@@ -1,0 +1,323 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking and shape drawing
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usetikzlibrary{shapes.geometric, arrows, patterns}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ NVR - TEACHER'S ANSWER KEY}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+\begin{center}
+\textbf{\Large TEACHER'S ANSWER KEY}\\
+\textbf{\Large Shape Puzzle Mastery - Homework Exercise}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Lesson Topic:} Collecting \& Disappearing Rules in Shape Puzzles \\
+\textbf{Total Marks:} 44 \\
+\textbf{Website:} \texttt{https://oatutors.co.uk/} \\
+\textbf{Recommended Time:} 45-60 minutes
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=yellow!10,colframe=orange!60,title=Teaching Notes]
+\textbf{Key Concepts Assessed:}
+\begin{itemize}
+    \item Understanding of Collecting Rule (same shapes join together)
+    \item Application of Disappearing Rule (different shapes cancel out)
+    \item Color differentiation in shape puzzles
+    \item Multi-step problem solving
+    \item Visual interpretation and pattern recognition
+    \item Creative problem construction
+\end{itemize}
+
+\textbf{Common Student Errors to Watch For:}
+\begin{itemize}
+    \item Ignoring color differences when applying collecting rule
+    \item Forgetting that different shapes cancel each other out
+    \item Not showing working in multi-step problems
+    \item Misunderstanding that shape + color must both match for collecting
+\end{itemize}
+\end{tcolorbox}
+
+\section{Section A: Warm-Up Puzzles (8 marks total - 1 mark each)}
+
+\subsection*{Question 1: Same shapes collecting together}
+\textbf{Answer:} 5 circles \\
+\textbf{Working:} 3 blue circles + 2 blue circles = 5 blue circles \\
+\textbf{Teaching Point:} Emphasize that same shapes collect together (Collecting Rule)
+
+\subsection*{Question 2: Different shapes disappearing}
+\textbf{Answer:} Nothing left (empty box) \\
+\textbf{Working:} 2 red squares + 2 blue circles = 0 (different shapes cancel out) \\
+\textbf{Teaching Point:} Different shapes always cancel each other out completely (Disappearing Rule)
+
+\subsection*{Questions 3-8: Quick Practice}
+\begin{enumerate}
+    \setcounter{enumi}{2}
+    \item 4 triangles + 2 triangles = \textbf{6 triangles}
+    \item 3 stars + 3 stars = \textbf{6 stars}
+    \item 5 circles + 2 squares = \textbf{3 circles} (5-2=3 circles remaining)
+    \item 4 diamonds + 4 hearts = \textbf{Nothing/Empty} (different shapes cancel)
+    \item 6 rectangles + 1 rectangle = \textbf{7 rectangles}
+    \item 3 hexagons + 3 circles = \textbf{Nothing/Empty} (different shapes cancel)
+\end{enumerate}
+
+\section{Section B: Color Combinations (10 marks total - 1 mark each)}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40,title=Teaching Reminder]
+Students must remember: Same shape AND same color = collecting. Any difference = canceling.
+\end{tcolorbox}
+
+\subsection*{Question 1-5: Color Matching}
+\begin{enumerate}
+    \item 2 red circles + 3 red circles = \textbf{5 red circles}
+    \item 4 blue squares + 2 yellow squares = \textbf{2 blue squares} (4-2=2 remaining)
+    \item 3 green triangles + 3 green triangles = \textbf{6 green triangles}
+    \item 5 purple stars + 2 purple hearts = \textbf{3 purple stars} (5-2=3 stars remaining)
+    \item 1 orange hexagon + 4 orange hexagons = \textbf{5 orange hexagons}
+\end{enumerate}
+
+\subsection*{Question 6-10: Mixed Colors}
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item \textbf{Answer:} 3 red circles + 3 blue circles = \textbf{6 circles total (3 red + 3 blue)}
+          \textbf{Working:} (2 red + 1 red) + (1 blue + 2 blue) = 3 red + 3 blue
+    \item 2 red + 1 blue circles PLUS 1 red + 2 blue circles = \textbf{3 red circles + 3 blue circles}
+    \item 3 yellow squares + 2 green squares = \textbf{1 yellow square} (3-2=1 remaining)
+    \item 4 purple triangles + 1 purple + 2 orange triangles = \textbf{3 purple triangles} (5-2=3)
+    \item 2 pink hearts + 3 pink diamonds = \textbf{1 pink diamond} (3-2=1 remaining)
+\end{enumerate}
+
+\section{Section C: Step-by-Step Problems (12 marks total)}
+
+\subsection*{Question 1: Multi-step puzzle (2 marks)}
+\textbf{Working:}
+- Step 1: 3 circles + 2 circles + 1 square = 5 circles + 1 square
+- Step 2: (5 circles + 1 square) + 2 squares = 5 circles + 3 squares  
+- Since circles and squares are different shapes: 5-3 = 2 circles remaining
+
+\textbf{Final Answer:} 2 circles
+
+\subsection*{Question 2-4: Pattern Puzzles (3 marks total)}
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \item \textbf{Box 4:} 1 star + 1 heart + 1 circle + 1 triangle (1 mark)
+          \textbf{Pattern:} Each box adds one new shape type
+    
+    \item \textbf{Answer:} 2 triangles were added (1 mark)
+          \textbf{Explanation:} 5 + something = 3, so 5 - 2 = 3 (2 triangles canceled out 2 of the original)
+    
+    \item \textbf{Answer:} 1 diamond + 3 squares (1 mark)
+          \textbf{Working:} 4 diamonds + 1 diamond + 3 squares = 5 diamonds + 3 squares = 2 diamonds + 3 squares
+\end{enumerate}
+
+\subsection*{Question 5-8: Real Puzzle Practice (4 marks)}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item \textbf{Analysis:} (2 red squares + 1 blue circle) + (2 blue circles + 1 red square)
+          \textbf{Result:} 3 red squares + 3 blue circles = nothing cancels, so keep all
+          \textbf{Answer:} 3 red squares + 3 blue circles (2 marks)
+    
+    \item \textbf{Answer:} 6 blue stars + 4 red hearts (different shapes, so both remain) (1 mark)
+    
+    \item \textbf{Working:} Started with 7, ended with 2, so 5 disappeared
+          If equal numbers cancel: added 5 different shapes
+          \textbf{Answer:} 5 shapes (1 mark)
+\end{enumerate}
+
+\subsection*{Question 9-12: Challenge Problems (3 marks)}
+\begin{enumerate}
+    \setcounter{enumi}{8}
+    \item \textbf{Sample Answer:} 3 circles + 2 squares = 1 circle
+          \textbf{Award marks for:} Correct application of rules (1 mark)
+    
+    \item \textbf{Working:} Box B = 3 circles, Box A = 6 circles
+          \textbf{Answer:} 3 + 6 = 9 circles total (1 mark)
+    
+    \item \textbf{Answer:} 3 squares were in the mystery box
+          \textbf{Working:} 3 + 4 = 7 squares (1 mark)
+    
+    \item \textbf{Sample Design:} 8 triangles + 3 circles = 5 triangles
+          \textbf{Award marks for:} Correct final result of 5 triangles
+\end{enumerate}
+
+\section{Section D: Visual Puzzles (8 marks total - 1 mark each)}
+
+\begin{tcolorbox}[colback=green!5,colframe=green!40,title=Visual Assessment Guide]
+Look for: Accurate counting, correct rule application, clear drawings/descriptions
+\end{tcolorbox}
+
+\subsection*{Question 1-4: Shape Counting}
+\begin{enumerate}
+    \item \textbf{Count First Box:} 3 red circles + 2 blue squares
+          \textbf{Count Second Box:} 2 red circles + 2 blue squares  
+          \textbf{Combined:} 5 red circles + 4 blue squares
+          \textbf{Result:} 1 red circle (5-4=1) (1 mark)
+    
+    \item \textbf{Sample Drawing:} Show 3 yellow triangles meeting 2 green circles
+          \textbf{Result:} 1 yellow triangle remaining (3-2=1) (1 mark)
+    
+    \item \textbf{Answer:} Nothing remains (they all cancel out) (1 mark)
+    
+    \item \textbf{Award marks for:} Creative design using 3+ different shapes with correct rule application (1 mark)
+\end{enumerate}
+
+\subsection*{Question 5-8: Advanced Visuals}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item \textbf{Sample Answer:} "Shapes in same positions collect, different shapes in same positions cancel" (1 mark)
+    
+    \item \textbf{Sample Puzzle:} 5 circles + 3 squares = 2 circles + 3 squares (1 mark)
+    
+    \item \textbf{Award marks for:} Reasonable attempt at memory + addition (1 mark)
+    
+    \item \textbf{Pattern Analysis:} Circle-square repeating + triangle-triangle
+          \textbf{Answer:} Circle, triangle, square, triangle (1 mark)
+\end{enumerate}
+
+\section{Section E: Problem-Solving Adventures (6 marks total - 1 mark each)}
+
+\subsection*{Question 1: The Missing Shapes Mystery}
+\textbf{Answer:} 5 triangles were in the box originally
+\textbf{Working:} 5 + 3 = 8 triangles total
+
+\subsection*{Question 2: The Disappearing Act}  
+\textbf{Answer:} 6 different shapes (hearts, squares, circles, etc.)
+\textbf{Explanation:} Different shapes cancel with the stars
+
+\subsection*{Question 3: The Shape Factory}
+\textbf{Working:}
+- Morning: 5 circles + 3 squares = 2 circles (5-3=2)
+- Afternoon: 4 triangles + 4 hearts = 0 (cancel out)  
+- Evening: 2 circles + 0 = 2 circles
+\textbf{Final Answer:} 2 circles
+
+\subsection*{Question 4: The Puzzle Master Challenge}
+\textbf{Sample Solution:}
+1. 8 stars + 2 stars = 10 stars (creates 6... wait, this creates 10)
+\textbf{Corrected Sample:}
+1. 4 circles + 2 circles = 6 circles
+2. 6 circles + 4 triangles = 2 circles  
+3. 2 circles + 0 = 2 circles
+
+\subsection*{Question 5: The Great Shape Sort}
+\textbf{Analysis:} Look for pairs (same shape AND color)
+- 4 red circles (can make 2 pairs)
+- 3 blue circles (can make 1 pair, 1 leftover)  
+- 2 red squares (can make 1 pair)
+- 5 blue squares (can make 2 pairs, 1 leftover)
+- 1 green triangle (no pair)
+\textbf{Answer:} Keep all red circles, 2 blue circles, all red squares, 4 blue squares
+
+\subsection*{Question 6: Invent and Solve}
+\textbf{Award marks for:} Creative puzzle with correct solution shown
+
+\section*{Marking Rubric}
+
+\begin{tabular}{|l|c|l|}
+\hline
+\textbf{Grade Boundary} & \textbf{Percentage} & \textbf{Teaching Action} \\
+\hline
+Excellent (40-44) & 91-100\% & Extend with more complex multi-step problems \\
+\hline
+Good (35-39) & 80-90\% & Review color combinations, practice visual puzzles \\
+\hline
+Satisfactory (28-34) & 64-79\% & Reinforce basic rules, more guided practice \\
+\hline
+Needs Support (<28) & <64\% & Reteach core concepts, use manipulatives \\
+\hline
+\end{tabular}
+
+\section*{Extension Activities for Fast Finishers}
+
+\begin{enumerate}
+    \item Create a 5-step puzzle that ends with exactly 1 shape
+    \item Design puzzles using fractions (e.g., half the circles disappear)
+    \item Invent puzzles with 3D shapes (cubes, spheres, pyramids)
+    \item Create "reverse puzzles" - given the answer, what was the question?
+\end{enumerate}
+
+\section*{Differentiation Notes}
+
+\textbf{For Struggling Students:}
+- Use physical manipulatives (colored shapes)
+- Start with single-step problems only
+- Focus on one rule at a time
+- Provide visual aids and step-by-step guides
+
+\textbf{For Advanced Students:}
+- Introduce algebraic thinking (if 3 + x = 7, what is x?)
+- Multi-variable problems (shapes with patterns/textures)
+- Create puzzles for younger students
+- Investigate mathematical properties (commutative, associative)
+
+\section*{Assessment Notes}
+
+\textbf{Look for evidence of:}
+- Systematic approach to problem-solving
+- Clear communication of mathematical thinking  
+- Ability to check answers for reasonableness
+- Creative and logical puzzle construction
+- Understanding of fundamental NVR concepts
+
+\textbf{Common Misconceptions to Address:}
+- Thinking that any shapes can collect (must be same shape AND color)
+- Forgetting that cancellation results in complete disappearance
+- Not recognizing that order doesn't matter in these operations
+- Confusion between addition and the collecting/disappearing rules
+
+\vspace{1cm}
+
+\textbf{Teacher Notes Section:}
+\hrule
+\vspace{3cm}
+
+\textbf{Class Performance Summary:}
+\hrule
+\vspace{3cm}
+
+\textbf{Next Lesson Focus:}
+\hrule
+\vspace{2cm}
+
+\end{document}

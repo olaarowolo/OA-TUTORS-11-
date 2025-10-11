@@ -1,0 +1,204 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ Mathematics - Homework Exercise}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+% This resets the page counter to 0 for the first page after the header setup
+% \thispagestyle{fancy} % Apply fancy style to the first page too
+
+\begin{center}
+\textbf{\Large Homework Exercise: Number Operations Mastery}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Name:} \underline{\hspace{4cm}} \quad \textbf{Date:} \underline{\hspace{3cm}} \quad \textbf{Class:} \underline{\hspace{2cm}} \\
+\textbf{Lesson Topic:} Addition, Subtraction, Multiplication, Division \\
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\section*{Instructions}
+Complete all sections. Show your working clearly. Use the mental strategies learned in class where appropriate. Check your answers using inverse operations.
+
+\section{Section A: Mental Arithmetic (20 Questions)}
+\textit{Calculate these in your head using the strategies we learned. Write only the answer.}
+
+\begin{tabular}{ll}
+1. 47 + 38 = \underline{\hspace{2cm}} & 11. 8 × 37 = \underline{\hspace{2cm}} \\
+2. 56 + 29 = \underline{\hspace{2cm}} & 12. 9 × 24 = \underline{\hspace{2cm}} \\
+3. 73 + 48 = \underline{\hspace{2cm}} & 13. 6 × 45 = \underline{\hspace{2cm}} \\
+4. 84 + 67 = \underline{\hspace{2cm}} & 14. 7 × 38 = \underline{\hspace{2cm}} \\
+5. 92 + 39 = \underline{\hspace{2cm}} & 15. 144 ÷ 12 = \underline{\hspace{2cm}} \\
+6. 124 - 67 = \underline{\hspace{2cm}} & 16. 156 ÷ 13 = \underline{\hspace{2cm}} \\
+7. 158 - 89 = \underline{\hspace{2cm}} & 17. 168 ÷ 14 = \underline{\hspace{2cm}} \\
+8. 207 - 98 = \underline{\hspace{2cm}} & 18. 195 ÷ 15 = \underline{\hspace{2cm}} \\
+9. 163 - 76 = \underline{\hspace{2cm}} & 19. 25 × 8 = \underline{\hspace{2cm}} \\
+10. 251 - 87 = \underline{\hspace{2cm}} & 20. 36 × 5 = \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\vspace{0.5cm}
+
+\section{Section B: Written Methods (5 Questions)}
+\textit{Use column addition, grid method for multiplication, or long division. Show all working.}
+
+\subsection*{Question 1: Column Addition}
+Calculate: 2,847 + 1,395 + 726 = ?
+
+\vspace{2cm}
+
+\subsection*{Question 2: Column Subtraction}
+Calculate: 5,234 - 1,678 = ?
+
+\vspace{2cm}
+
+\subsection*{Question 3: Grid Method Multiplication}
+Calculate: 47 × 38 = ?
+
+\vspace{3cm}
+
+\subsection*{Question 4: Long Multiplication}
+Calculate: 346 × 27 = ?
+
+\vspace{3cm}
+
+\subsection*{Question 5: Long Division}
+Calculate: 1,248 ÷ 24 = ?
+
+\vspace{3cm}
+
+\section{Section C: Word Problems (3 Questions)}
+\textit{Read carefully, identify the operation needed, solve step by step.}
+
+\subsection*{Question 1}
+A school orders 24 boxes of pencils. Each box contains 36 pencils. How many pencils are there altogether? If the school has 847 students, how many pencils are left over after giving one to each student?
+
+\vspace{4cm}
+
+\subsection*{Question 2}
+Sarah has £4.50. She buys 3 items costing £1.25 each. How much change does she receive? If she then buys another item costing £0.85, how much money does she have left?
+
+\vspace{4cm}
+
+\subsection*{Question 3}
+A factory produces 1,440 widgets per day. How many widgets are produced in a week (7 days)? If each widget weighs 250g, what is the total weight of widgets produced in one day? Give your answer in kilograms.
+
+\vspace{4cm}
+
+\section{Section D: Challenge Questions (4 Questions)}
+\textit{These are 11+ level questions. Think carefully and show all working.}
+
+\subsection*{Question 1}
+What is the missing number? 347 + \_\_\_\_\_ = 1000
+
+\vspace{2cm}
+
+\subsection*{Question 2}
+Find two numbers that multiply to give 144 and add to give 24.
+
+\vspace{2cm}
+
+\subsection*{Question 3}
+Calculate: 7,245 ÷ 15 = \_\_\_\_\_ remainder \_\_\_\_\_
+
+\vspace{2cm}
+
+\subsection*{Question 4}
+A number when doubled and then increased by 7 gives 39. What is the number?
+
+\vspace{2cm}
+
+\section{Extension Activity: Factor Investigation}
+Find all the factor pairs of 72. A factor pair consists of two numbers that multiply to give 72.
+
+Example: 1 × 72 = 72, so (1, 72) is a factor pair.
+
+List all factor pairs:
+\begin{enumerate}
+    \item (1, 72)
+    \item (\underline{\hspace{1cm}}, \underline{\hspace{1cm}})
+    \item (\underline{\hspace{1cm}}, \underline{\hspace{1cm}})
+    \item (\underline{\hspace{1cm}}, \underline{\hspace{1cm}})
+    \item (\underline{\hspace{1cm}}, \underline{\hspace{1cm}})
+    \item (\underline{\hspace{1cm}}, \underline{\hspace{1cm}})
+\end{enumerate}
+
+\vspace{1cm}
+
+\section*{Self-Assessment}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Section} & \textbf{Confident} & \textbf{Need Practice} & \textbf{Need Help} \\
+\hline
+Mental Arithmetic & $\square$ & $\square$ & $\square$ \\
+\hline
+Written Methods & $\square$ & $\square$ & $\square$ \\
+\hline
+Word Problems & $\square$ & $\square$ & $\square$ \\
+\hline
+Challenge Questions & $\square$ & $\square$ & $\square$ \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+\textbf{Parent/Guardian Signature:} \underline{\hspace{5cm}} \textbf{Date:} \underline{\hspace{3cm}}
+
+\section*{Teacher Use Only}
+\begin{tabular}{|l|c|l|}
+\hline
+\textbf{Section A} & \_\_\_/20 & Comments: \\
+\hline
+\textbf{Section B} & \_\_\_/5 & \\
+\hline
+\textbf{Section C} & \_\_\_/3 & \\
+\hline
+\textbf{Section D} & \_\_\_/4 & \\
+\hline
+\textbf{Extension} & \_\_\_/6 & \\
+\hline
+\textbf{Total} & \_\_\_/38 & \\
+\hline
+\end{tabular}
+
+\end{document}

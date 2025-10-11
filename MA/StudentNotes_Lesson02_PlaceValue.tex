@@ -1,0 +1,214 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ Mathematics - Student Notes}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+% This resets the page counter to 0 for the first page after the header setup
+% \thispagestyle{fancy} % Apply fancy style to the first page too
+
+\begin{center}
+\textbf{\Large 11+ Maths Student Notes: Place Value}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=\textbf{What You'll Learn Today}]
+\begin{itemize}
+    \item Read and write large numbers (up to millions!)
+    \item Understand what each digit means in a number
+    \item Compare and order numbers using $>$, $<$, $=$
+    \item Work with decimal numbers confidently
+\end{itemize}
+\end{tcolorbox}
+
+\section{The Place Value System}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Millions} & \textbf{HTh} & \textbf{TTh} & \textbf{Th} & \textbf{H} & \textbf{T} & \textbf{U} \\
+\hline
+M & HTh & TTh & Th & H & T & U \\
+\hline
+3 & 2 & 4 & 7 & 5 & 6 & 8 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{This number is:} 3,247,568
+\\
+\textbf{In words:} Three million, two hundred and forty-seven thousand, five hundred and sixty-eight
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=\textbf{Key Rule}]
+Each position is 10 times bigger than the position to its right!
+\end{tcolorbox}
+
+\section{Decimal Place Value}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{H} & \textbf{T} & \textbf{U} & \textbf{.} & \textbf{Tenths} & \textbf{Hundredths} & \textbf{Thousandths} \\
+\hline
+4 & 3 & 7 & . & 2 & 6 & 8 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{This number is:} 437.268
+\\
+\textbf{In words:} Four hundred and thirty-seven point two six eight
+
+\begin{tcolorbox}[colback=orange!5!white,colframe=orange!75!black,title=\textbf{Important!}]
+\begin{itemize}
+    \item We only say "and" for the decimal point
+    \item Don't say "point two hundred and sixty-eight"
+    \item Say each digit separately: "point two six eight"
+\end{itemize}
+\end{tcolorbox}
+
+\section{Comparing Numbers}
+
+\subsection{The Strategy}
+\begin{enumerate}
+    \item Start from the left (biggest place value)
+    \item Compare digits in the same position
+    \item The first different digit tells you which is bigger
+\end{enumerate}
+
+\subsection{Examples}
+\begin{itemize}
+    \item 34,567 $>$ 34,476 (Compare hundreds: 5 $>$ 4)
+    \item 7.39 $<$ 7.4 (7.4 = 7.40, so 39 hundredths $<$ 40 hundredths)
+\end{itemize}
+
+\section{Rounding Numbers}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=\textbf{Rounding Rules}]
+\textbf{Look at the digit to the RIGHT of where you're rounding:}
+\begin{itemize}
+    \item If it's 5 or more → round UP
+    \item If it's 4 or less → round DOWN
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Examples}
+\begin{itemize}
+    \item 47,368 rounded to nearest thousand = 47,000
+    \item 3.247 rounded to 1 decimal place = 3.2
+    \item 156,499 rounded to nearest hundred thousand = 200,000
+\end{itemize}
+
+\section{Quick Reference}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Meaning} \\
+\hline
+$>$ & Greater than (bigger) \\
+\hline
+$<$ & Less than (smaller) \\
+\hline
+$=$ & Equal to (same as) \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Common Mistakes to Avoid}
+
+\begin{tcolorbox}[colback=purple!5!white,colframe=purple!75!black,title=\textbf{Watch Out!}]
+\begin{itemize}
+    \item Writing 20,345 as 2,0345 ❌
+    \item Forgetting zeros as placeholders
+    \item Mixing up tenths and hundredths
+    \item Not lining up decimal points when comparing
+\end{itemize}
+\end{tcolorbox}
+
+\section{Memory Tricks}
+
+\begin{itemize}
+    \item \textbf{Thousands:} Think "thousand" has 4 letters, thousands have 4 digits (1,000)
+    \item \textbf{Decimals:} Tenths are bigger than hundredths (like £0.10 $>$ £0.01)
+    \item \textbf{Comparing:} The "mouth" of $>$ opens to the bigger number
+\end{itemize}
+
+\section{Quick Practice}
+
+\textbf{Write in figures:}
+\begin{enumerate}
+    \item Two million, four hundred and fifty thousand, six hundred and twelve
+    \item Seven point zero three five
+\end{enumerate}
+
+\textbf{Compare using $>$, $<$, or $=$:}
+\begin{enumerate}
+    \setcounter{enumi}{2}
+    \item 45,670 \_\_\_ 45,607
+    \item 0.5 \_\_\_ 0.50
+\end{enumerate}
+
+\textbf{Round to the nearest hundred:}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item 4,567 = \_\_\_\_\_
+    \item 23,449 = \_\_\_\_\_
+\end{enumerate}
+
+\vspace{1cm}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=gray!50!black,title=\textbf{Homework Reminder}]
+\begin{itemize}
+    \item Practice reading large numbers aloud
+    \item Complete the place value worksheet
+    \item Use real money to practice decimals!
+\end{itemize}
+\end{tcolorbox}
+
+\end{document}

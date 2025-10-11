@@ -1,0 +1,292 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{graphicx} % Required for including images
+\usepackage{tikz}     % Required for watermarking
+\usepackage{fancyhdr} % Required for custom headers/footers
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\geometry{a4paper, margin=1in}
+\setlength{\headheight}{33pt} % Fix header height for logo
+\addtolength{\topmargin}{-21pt} % Adjust top margin accordingly
+
+% --- Watermark setup ---
+\usepackage{eso-pic}
+\newcommand\BackgroundPicture{%
+\put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+\makebox(0,0)[c]{%
+\tikz[opacity=0.08]\node{\includegraphics[width=1\paperwidth]{../oatutors_logo.png}};%
+}%
+}}
+\AddToShipoutPicture{\BackgroundPicture}
+% --- End Watermark setup ---
+
+% --- Header setup for logo ---
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{\includegraphics[height=1.0cm]{../oatutors_logo.png}} % Logo on the left (slightly smaller for better proportion)
+\fancyhead[C]{\textbf{11+ Mathematics - Extension Activity Sheet}} % Course title in center
+\fancyhead[R]{\rightmark} % Section title on the right
+\fancyfoot[C]{\thepage} % Page number in the footer
+\renewcommand{\headrulewidth}{0.4pt} % Line under the header
+\renewcommand{\footrulewidth}{0.4pt} % Line over the footer
+% --- End Header setup ---
+
+\begin{document}
+\onehalfspacing
+
+\begin{center}
+\textbf{\Large Extension Activities: Number Operations}\\
+\textbf{\large When You've Finished Early...}
+\vspace{0.2cm}
+\end{center}
+
+\hrule
+\vspace{0.1cm}
+
+\textbf{Name:} \underline{\hspace{4cm}} \quad \textbf{Date:} \underline{\hspace{3cm}} \quad \textbf{Class:} \underline{\hspace{2cm}} \\
+\textbf{Lesson Topic:} Four Number Operations - Extension Activities \\
+\textbf{Website:} \texttt{https://oatutors.co.uk/}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue!60,title=Teacher Instructions]
+\textbf{Purpose:} These activities extend learning for students who complete the main lesson early.\\
+\textbf{Time:} 5-20 minutes depending on activity chosen\\
+\textbf{Differentiation:} Choose activities appropriate to student ability level\\
+\textbf{Materials:} None required - all activities self-contained
+\end{tcolorbox}
+
+\section{Quick Challenges (5-10 minutes)}
+
+\subsection*{Challenge 1: Mental Math Speed Test}
+Complete these as quickly as possible. Time yourself!
+
+\textbf{Start Time:} \underline{\hspace{2cm}} \textbf{End Time:} \underline{\hspace{2cm}} \textbf{Total Time:} \underline{\hspace{2cm}}
+
+\begin{multicols}{3}
+\begin{enumerate}
+    \item $45 + 37 = $ \underline{\hspace{1.5cm}}
+    \item $83 - 29 = $ \underline{\hspace{1.5cm}}
+    \item $7 \times 8 = $ \underline{\hspace{1.5cm}}
+    \item $72 \div 9 = $ \underline{\hspace{1.5cm}}
+    \item $34 + 58 = $ \underline{\hspace{1.5cm}}
+    \item $90 - 47 = $ \underline{\hspace{1.5cm}}
+    \item $6 \times 9 = $ \underline{\hspace{1.5cm}}
+    \item $56 \div 7 = $ \underline{\hspace{1.5cm}}
+    \item $67 + 25 = $ \underline{\hspace{1.5cm}}
+    \item $100 - 38 = $ \underline{\hspace{1.5cm}}
+    \item $8 \times 7 = $ \underline{\hspace{1.5cm}}
+    \item $63 \div 9 = $ \underline{\hspace{1.5cm}}
+\end{enumerate}
+\end{multicols}
+
+\subsection*{Challenge 2: Number Pyramid}
+Fill in the missing numbers. Each brick is the sum of the two bricks below it.
+
+\begin{center}
+\begin{tikzpicture}
+    % Bottom row
+    \draw (0,0) rectangle (1,0.8);
+    \node at (0.5,0.4) {12};
+    \draw (1,0) rectangle (2,0.8);
+    \node at (1.5,0.4) {?};
+    \draw (2,0) rectangle (3,0.8);
+    \node at (2.5,0.4) {18};
+    \draw (3,0) rectangle (4,0.8);
+    \node at (3.5,0.4) {?};
+    
+    % Second row
+    \draw (0.5,0.8) rectangle (1.5,1.6);
+    \node at (1,1.2) {25};
+    \draw (1.5,0.8) rectangle (2.5,1.6);
+    \node at (2,1.2) {?};
+    \draw (2.5,0.8) rectangle (3.5,1.6);
+    \node at (3,1.2) {31};
+    
+    % Third row
+    \draw (1,1.6) rectangle (2,2.4);
+    \node at (1.5,2) {?};
+    \draw (2,1.6) rectangle (3,2.4);
+    \node at (2.5,2) {?};
+    
+    % Top
+    \draw (1.5,2.4) rectangle (2.5,3.2);
+    \node at (2,2.8) {?};
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Challenge 3: Missing Operations}
+Fill in the missing operation signs (+, -, ×, ÷):
+
+\begin{enumerate}
+    \item $24 \; \underline{\hspace{0.5cm}} \; 6 = 18$
+    \item $7 \; \underline{\hspace{0.5cm}} \; 8 = 56$
+    \item $45 \; \underline{\hspace{0.5cm}} \; 9 = 5$
+    \item $13 \; \underline{\hspace{0.5cm}} \; 17 = 30$
+    \item $64 \; \underline{\hspace{0.5cm}} \; 8 = 8$
+    \item $25 \; \underline{\hspace{0.5cm}} \; 19 = 44$
+\end{enumerate}
+
+\section{Problem Solving Adventures (10-15 minutes)}
+
+\subsection*{Adventure 1: The Magic Square}
+Complete this 3×3 magic square where every row, column, and diagonal adds up to 15:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+2 & & 6 \\
+\hline
+& 5 & \\
+\hline
+4 & & 8 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Adventure 2: Number Detective}
+I'm thinking of a number. Use the clues to find it:
+\begin{itemize}
+    \item It's between 20 and 50
+    \item When you divide it by 7, there's no remainder
+    \item When you add 13 to it, you get 56
+    \item What's my number? \underline{\hspace{3cm}}
+\end{itemize}
+
+\subsection*{Adventure 3: Shopping Challenge}
+You have £20 to spend. Choose items to buy without going over budget:
+\begin{itemize}
+    \item Pencil case: £3.50
+    \item Notebook: £2.25
+    \item Calculator: £8.75
+    \item Ruler set: £4.40
+    \item Marker pens: £5.60
+    \item Eraser pack: £1.80
+\end{itemize}
+
+Your shopping list: \underline{\hspace{8cm}}
+
+Total cost: £\underline{\hspace{2cm}} \quad Change: £\underline{\hspace{2cm}}
+
+\subsection*{Adventure 4: Pattern Puzzle}
+Continue these number patterns:
+\begin{enumerate}
+    \item $3, 6, 12, 24, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}$
+    \item $100, 91, 82, 73, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}$
+    \item $2, 6, 18, 54, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}, \underline{\hspace{1cm}}$
+\end{enumerate}
+
+\section{Creative Challenges (15-20 minutes)}
+
+\subsection*{Creative Challenge 1: Design Your Own}
+Create a word problem that uses all four operations (+, -, ×, ÷). Then solve it!
+
+\textbf{Your Problem:}
+\vspace{3cm}
+
+\textbf{Your Solution:}
+\vspace{2cm}
+
+\subsection*{Creative Challenge 2: Number Stories}
+Write a short story that includes these calculations. Be creative!
+- $15 \times 4 = 60$
+- $60 - 23 = 37$  
+- $37 + 18 = 55$
+- $55 \div 5 = 11$
+
+\textbf{Your Story:}
+\vspace{5cm}
+
+\subsection*{Creative Challenge 3: Math Art}
+Create a picture using only numbers and operation signs. Be artistic!
+
+\vspace{6cm}
+
+\section{Brain Teasers (For Advanced Students)}
+
+\subsection*{Teaser 1: The Locker Problem}
+A school has 100 lockers. A student walks down the hall and opens every locker. A second student closes every 2nd locker (2, 4, 6, 8...). A third student changes every 3rd locker (opens if closed, closes if open). This continues for 100 students. Which lockers are open at the end?
+
+\textbf{Strategy:} Think about which numbers are perfect squares...
+
+\textbf{Answer:} \underline{\hspace{8cm}}
+
+\subsection*{Teaser 2: Age Puzzle}
+Sarah is 3 times as old as her brother Tom. In 6 years, she will be twice as old as Tom. How old are they now?
+
+\textbf{Working:}
+\vspace{3cm}
+
+\textbf{Answer:} Sarah is \underline{\hspace{2cm}} years old, Tom is \underline{\hspace{2cm}} years old.
+
+\subsection*{Teaser 3: The Coin Problem}
+You have 12 coins that look identical, but one is lighter than the others. Using a balance scale only 3 times, how can you find the light coin?
+
+\textbf{Strategy:}
+\vspace{4cm}
+
+\section{Self-Challenge Zone}
+
+\subsection*{Create Your Own Speed Test}
+Write 10 mental math problems for a friend to solve:
+
+\begin{enumerate}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+    \item \underline{\hspace{6cm}} = \underline{\hspace{2cm}}
+\end{enumerate}
+
+\subsection*{Research Project}
+Choose one topic to investigate:
+\begin{itemize}
+    \item The history of the multiplication symbol (×)
+    \item How ancient civilizations did division
+    \item The largest number ever calculated
+    \item How computers do arithmetic
+\end{itemize}
+
+\textbf{My chosen topic:} \underline{\hspace{6cm}}
+
+\textbf{Three interesting facts I discovered:}
+\begin{enumerate}
+    \item \underline{\hspace{10cm}}
+    \item \underline{\hspace{10cm}}
+    \item \underline{\hspace{10cm}}
+\end{enumerate}
+
+\section*{Reflection}
+\textbf{Which activity did you enjoy most?} \underline{\hspace{6cm}}
+
+\textbf{Which was most challenging?} \underline{\hspace{6cm}}
+
+\textbf{What would you like to explore further?} \underline{\hspace{6cm}}
+
+\vspace{1cm}
+
+\begin{tcolorbox}[colback=green!10,colframe=green!60,title=Teacher Assessment Notes]
+\textbf{Student demonstrated:}
+$\square$ Quick mental calculation skills\\
+$\square$ Problem-solving persistence\\
+$\square$ Creative mathematical thinking\\
+$\square$ Logical reasoning ability\\
+$\square$ Independent learning skills\\
+
+\textbf{Recommended next challenges:} \underline{\hspace{8cm}}
+\end{tcolorbox}
+
+\end{document}
